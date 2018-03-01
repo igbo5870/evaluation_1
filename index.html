@@ -12,65 +12,85 @@
         <h1>Mon budget</h1>
     </header>
     <!-- Part 1 - Spending (FR - Dépenses)-->
+    <form method='POST'>
     <section class='spending-section'>
         <h2>Dépenses</h2>
-        <h3>Dépenses Fixes</h3>
-        <label for='field-rent' required>Loyer et charges* :</label>
-        <input type='text' id='field-rent' /> <br>
-        <label for='field-credit'>Crédits :</label>
-        <input type='text' id='field-credit' /> <br>
-        <label for='field-water' required>Eau/Électricité/Gaz* :</label>
-        <input type='text' id='field-water' /> <br>
-        <label for='field-phone' required>Téléphone/Internet* :</label>
-        <input type='text' id='field-phone' /> <br>
-        <label for='field-dwelling'>Assurance Habitation :</label>
-        <input type='text' id='field-dwelling' /> <br>
-        <label for='field-car'>Assurance Véhicule :</label>
-        <input type='text' id='field-car' /> <br>
-        <label for='field-health' >Mutuelle santé :</label>
-        <input type='text' id='field-health' /> <br>
-        <label for='field-keeping' >Frais de garde :</label>
-        <input type='text' id='field-keeping' /> <br>
-        <label for='field-income'>Impôts sur le revenu :</label>
-        <input type='text' id='field-income' /> <br>
-        <label for='field-local'>Impôts Locaux:</label>
-        <input type='text' id='field-local' />
-        <h3>Dépenses Courantes</h3>
-            <label for='field-food'>Courses :</label>
-            <input type='text' id='field-food' /> <br>
-            <label for='field-gasoline'>Essences :</label>
-            <input type='text' id='field-gasoline' /> <br>
-            <label for='field-hobbies'>Activité sportive/culturel:</label>
-            <input type='text' id='field-hobbies' /> <br>
-        <h3>Dépenses Occasionnelle</h3>
-            <label for='field-party'>Sortie :</label>
-            <input type='text' id='field-party' />
-        <h3>Autres Dépenses</h3>
-            <label for='field-others'>Autres :</label>
-            <input type='text' id='field-others' />
+        <div class='content-section'>
+            <h3>Dépenses Fixes</h3><br>
+            <div class='form-input'>
+                <label for='field-rent' required>Loyer et charges* :</label>
+                <input type='text' id='field-rent' /> <br>
+                <label for='field-credit'>Crédits :</label>
+                <input type='text' id='field-credit' /> <br>
+                <label for='field-water' required>Eau/Électricité/Gaz* :</label>
+                <input type='text' id='field-water' /> <br>
+                <label for='field-phone' required>Téléphone/Internet* :</label>
+                <input type='text' id='field-phone' /> <br>
+                <label for='field-dwelling'>Assurance Habitation :</label>
+                <input type='text' id='field-dwelling' /> <br>
+                <label for='field-car'>Assurance Véhicule :</label>
+                <input type='text' id='field-car' /> <br>
+                <label for='field-health' >Mutuelle santé :</label>
+                <input type='text' id='field-health' /> <br>
+                <label for='field-keeping' >Frais de garde :</label>
+                <input type='text' id='field-keeping' /> <br>
+                <label for='field-income'>Impôts sur le revenu :</label>
+                <input type='text' id='field-income' /> <br>
+                <label for='field-local'>Impôts Locaux:</label>
+                <input type='text' id='field-local' /><br>
+            </div>
+            <h3>Dépenses Courantes</h3><br>
+            <div class='form-input'>
+                <label for='field-food'>Courses :</label>
+                <input type='text' id='field-food' /> <br>
+                <label for='field-gasoline'>Essences :</label>
+                <input type='text' id='field-gasoline' /> <br>
+                <label for='field-hobbies'>Activité sportive/culturel :</label>
+                <input type='text' id='field-hobbies' /> <br>
+            </div>
+            <h3>Dépenses Occasionnelle</h3><br>
+            <div class='form-input'>
+                <label for='field-party'>Sortie :</label>
+                <input type='text' id='field-party' />
+            </div>
+            <h3>Autres Dépenses</h3><br>
+            <div class='form-input'>
+                <label for='field-others'>Autres :</label>
+                <input type='text' id='field-others' /><br>
+            </div>
+        </div>
     </section>
     <!-- Part 2 - Recipe (FR - Recette) -->
     <section class='recipe-section'>
         <h2>Recettes</h2>
-        <label for='recipe--field-salary'>Salaire : </label>
-        <input type='text' id='recipe--field-salary' /> <br>
-        <label for='field-help'>Aide (Allocation, etc) : </label>
-        <input type='text' id='field-help' /> <br>
-        <label for='recipe--field-annuity'>Rentes : </label>
-        <input type='text' id='recipe--field-annuity' /> <br>
-        <label for='recipe--field-others'>Autres : </label>
-        <input type='text' id='recipe--field-others' /> <br>
+        <div class='content-section'>
+            <div class='form-input'>
+                <label for='recipe--field-salary'>Salaire : </label>
+                <input type='text' id='recipe--field-salary' /> <br>
+                <label for='field-help'>Aide (Allocation, etc) : </label>
+                <input type='text' id='field-help' /> <br>
+                <label for='recipe--field-annuity'>Rentes : </label>
+                <input type='text' id='recipe--field-annuity' /> <br>
+                <label for='recipe--field-others'>Autres : </label>
+                <input type='text' id='recipe--field-others' /> <br>
+            </div>
+        </div>
     </section>
     <!-- Part 3 - Savings (FR - Epargnes) -->
     <section class='savings-section'>
         <h2>Epargnes</h2>
-        <label for='field-amount'>Montant : </label>
-        <input type='text' id='field-amount' />
+        <div class='content-section'>
+            <div class='form-input'>
+                <label for='field-amount'>Montant : </label>
+                <input type='text' id='field-amount' />
+            </div>
+        </div>
         </section>
     <!-- Part 4 - Result (FR - Resultat) -->
-    <section class='recipe-section'>
-        <input type='submit' value='Calculer'>
+    <section class='result-section'>
+            <input type='submit' value='Calculer' class='result-btn'>
     </section>
+    </form>
     <!-- Footer -->
     <footer>
         <p><a href='#'>Mentions Légales</a></p>
