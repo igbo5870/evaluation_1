@@ -4,10 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Votre budget mensuel</title>
+    <title>Mon Budget</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+    <header>
+        <h1>Mon budget</h1>
+    </header>
+    <!-- Part 1 - Spending (FR - Dépenses)-->
+    <section class='spending-section'>
+        <h2>Dépenses</h2>
+        <h3>Dépenses Fixes</h3>
+        <form method='POST'>
+            <label for='field-rent' required>Loyer et charges* :</label>
+            <input type='text' id='field-rent' />
+            <label for='field-credit'>Crédits :</label>
+            <input type='text' id='field-credit' />
+            <label for='field-water' required>Eau/Électricité/Gaz* :</label>
+            <input type='text' id='field-water' />
+            <label for='field-phone' required>Téléphone/Internet* :</label>
+            <input type='text' id='field-phone' />
+            <label for='field-dwelling'>Assurance Habitation :</label>
+            <input type='text' id='field-dwelling' />
+            <label for='field-car'>Assurance Véhicule :</label>
+            <input type='text' id='field-car' />
+            <label for='field-health' >Mutuelle santé :</label>
+            <input type='text' id='field-health' />
+            <label for='field-keeping' >Frais de garde :</label>
+            <input type='text' id='field-keeping' />
+            <label for='field-income'>Impôts sur le revenu :</label>
+            <input type='text' id='field-income' />
+            <label for='field-local'>Impôts Locaux:</label>
+            <input type='text' id='field-local' />
+        </form>
+        <h3>Dépenses Courantes</h3>
+        <form method='POST'>
+            <label for='field-food'>Courses :</label>
+            <input type='text' id='field-food' />
+            <label for='field-gasoline'>Essences :</label>
+            <input type='text' id='field-gasoline' />
+            <label for='field-hobbies'>Activité sportive/culturel:</label>
+            <input type='text' id='field-hobbies' />
+        </form>
+        <h3>Dépenses Occasionnelle</h3>
+        <form method='POST'>
+            <label for='field-party'>Sortie :</label>
+            <input type='text' id='field-party' />
+        </form>
+        <h3>Autres Dépenses</h3>
+        <form method='POST'>
+            <label for='field-others'>Autres :</label>
+            <input type='text' id='field-others' />
+        </form>
+    </section>
+    <!-- Part 2 - Recipe (FR - Recette) -->
+    <!-- Part 3 - Savings (FR - Epargnes) -->
+    <!-- Part 4 - Result (FR - Resultat) -->
+    <footer>
+        <p><a href='#'>Mentions Légales</a></p>
+    </footer>
     <script src='js/jquery.min.js' ></script>
     <script src='js/app.js' ></script>
 </body>
