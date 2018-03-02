@@ -3,13 +3,13 @@
     // Click button add for Spending 
     $('#id-input-add-spend').on('click', function(){
         $('.form-input-others').append(' <label for=\'field-others\'>Autres :</label> ' +
-        '<input type=\'number\' step=\'0.01\' class=\'class-input-spend\' id=\'field-others\' /><br>');
+        '<input type=\'number\' step=\'0.01\' class=\'class-input-spend\' id=\'field-others\' /> € <br>');
     });
 
     // Click button add for recipe
     $('#id-input-add-recipe').on('click', function(){
         $('.form-input-recipe').append(' <label for=\'field-others\'>Autres :</label> ' +
-        '<input type=\'number\' step=\'0.01\' class=\'class-input-spend\' id=\'field-others\' /><br>');
+        '<input type=\'number\' step=\'0.01\' class=\'class-input-spend\' id=\'field-others\' /> € <br>');
     })
 
     // Click button calcul end page 
