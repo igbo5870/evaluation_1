@@ -18,45 +18,45 @@
         <div class='content-section'>
             <h3>Dépenses Fixes</h3><br>
             <div class='form-input'>
-                <label for='field-rent' required>Loyer et charges* :</label>
-                <input type='text' id='field-rent' /> <br>
-                <label for='field-credit'>Crédits :</label>
-                <input type='text' id='field-credit' /> <br>
-                <label for='field-water' required>Eau/Électricité/Gaz* :</label>
-                <input type='text' id='field-water' /> <br>
-                <label for='field-phone' required>Téléphone/Internet* :</label>
-                <input type='text' id='field-phone' /> <br>
+                <label for='field-rent'>Loyer et charges* :</label>
+                <input type='number' class='class-input-spend' id='field-rent' required /> <br>
+                <label for='field-credit' >Crédits :</label>
+                <input type='number' class='class-input-spend' id='field-credit' /> <br>
+                <label for='field-water'>Eau/Électricité/Gaz* :</label>
+                <input type='number' class='class-input-spend' id='field-water' required/> <br>
+                <label for='field-phone' >Téléphone/Internet* :</label>
+                <input type='number' class='class-input-spend' id='field-phone' required /> <br>
                 <label for='field-dwelling'>Assurance Habitation :</label>
-                <input type='text' id='field-dwelling' /> <br>
+                <input type='number' class='class-input-spend' id='field-dwelling' /> <br>
                 <label for='field-car'>Assurance Véhicule :</label>
-                <input type='text' id='field-car' /> <br>
+                <input type='number' class='class-input-spend' id='field-car' /> <br>
                 <label for='field-health' >Mutuelle santé :</label>
-                <input type='text' id='field-health' /> <br>
+                <input type='number' class='class-input-spend' id='field-health' /> <br>
                 <label for='field-keeping' >Frais de garde :</label>
-                <input type='text' id='field-keeping' /> <br>
+                <input type='number' class='class-input-spend' id='field-keeping' /> <br>
                 <label for='field-income'>Impôts sur le revenu :</label>
-                <input type='text' id='field-income' /> <br>
+                <input type='number' class='class-input-spend' id='field-income' /> <br>
                 <label for='field-local'>Impôts Locaux:</label>
-                <input type='text' id='field-local' /><br>
+                <input type='number' class='class-input-spend' id='field-local' /><br>
             </div>
             <h3>Dépenses Courantes</h3><br>
             <div class='form-input'>
                 <label for='field-food'>Courses :</label>
-                <input type='text' id='field-food' /> <br>
+                <input type='number' class='class-input-spend' id='field-food' /> <br>
                 <label for='field-gasoline'>Essences :</label>
-                <input type='text' id='field-gasoline' /> <br>
+                <input type='number' class='class-input-spend' id='field-gasoline' /> <br>
                 <label for='field-hobbies'>Activité sportive/culturel :</label>
-                <input type='text' id='field-hobbies' /> <br>
+                <input type='number' class='class-input-spend' id='field-hobbies' /> <br>
             </div>
             <h3>Dépenses Occasionnelle</h3><br>
             <div class='form-input'>
                 <label for='field-party'>Sortie :</label>
-                <input type='text' id='field-party' />
+                <input type='number' class='class-input-spend' id='field-party' />
             </div>
             <h3>Autres Dépenses</h3><br>
             <div class='form-input'>
                 <label for='field-others'>Autres :</label>
-                <input type='text' id='field-others' /><br>
+                <input type='number' class='class-input-spend' id='field-others' /><br>
             </div>
         </div>
     </section>
@@ -66,13 +66,13 @@
         <div class='content-section'>
             <div class='form-input'>
                 <label for='recipe--field-salary'>Salaire : </label>
-                <input type='text' id='recipe--field-salary' /> <br>
-                <label for='field-help'>Aide (Allocation, etc) : </label>
-                <input type='text' id='field-help' /> <br>
+                <input type='number' class='class-input-recipe' id='recipe--field-salary' /> <br>
+                <label for='recipe--field-help'>Aide (Allocation, etc) : </label>
+                <input type='number' class='class-input-recipe' id='recipe--field-help' /> <br>
                 <label for='recipe--field-annuity'>Rentes : </label>
-                <input type='text' id='recipe--field-annuity' /> <br>
+                <input type='number' class='class-input-recipe' id='recipe--field-annuity' /> <br>
                 <label for='recipe--field-others'>Autres : </label>
-                <input type='text' id='recipe--field-others' /> <br>
+                <input type='number' class='class-input-recipe' id='recipe--field-others' /> <br>
             </div>
         </div>
     </section>
@@ -82,13 +82,17 @@
         <div class='content-section'>
             <div class='form-input'>
                 <label for='field-amount'>Montant : </label>
-                <input type='text' id='field-amount' />
+                <input type='number' class='input-value class-input-saving' id='field-amount' />
             </div>
         </div>
         </section>
     <!-- Part 4 - Result (FR - Resultat) -->
     <section class='result-section'>
-            <input type='submit' value='Calculer' class='result-btn'>
+            <div class='content-section'>
+                    <div class='result-message'></div>
+            </div>
+            <input type='submit' value='Calculer' class='result-btn' id='id-result-btn' >
+            <input type='submit' value='Reset' class='reset-btn' id='id-reset-btn' >
     </section>
     </form>
     <!-- Footer -->
